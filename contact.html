@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('active'); // Toggle 'active' class
+    }
+  </script>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- Contact Form and Image Wrapper -->
+    <div class="contact-wrapper">
+      <!-- Centered Title Above the Form -->
+     
+  
+      <!-- Image Section -->
+      <div class="contact-image">
+        <img src="contact-image.jpg" alt="Contact Image">
+      </div>
+  
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <div class="contact-form-header">
+          <h1>Contact Me</h1>
+        </div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+  
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <h2>Follow Me</h2>
+      <a href="https://www.instagram.com/notamihoney" target="_blank">
+        <img src="instagram-icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/gaini-kinayat-3369b0313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+        <img src="linkedin-icon.png" alt="LinkedIn">
+      </a>
+      <a href="https://twitter.com/notamihoney" target="_blank">
+        <img src="twitter-icon.png" alt="Twitter">
+      </a>
+    </div>
+  </section>
+  
+  <!-- Static Map Image (Optional) -->
+  <div class="map-section">
+    <img src="static-map.jpg" alt="Map Location" class="map-image">
+  </div>
+</body>
+</html>

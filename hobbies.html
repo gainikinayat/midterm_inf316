@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies and Interests</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('active'); // Toggle 'active' class
+    }
+  </script>
+
+  <!-- Hobbies Section -->
+  <section class="hobbies-section">
+    <h1>My Hobbies and Interests</h1>
+    
+    <p>Here are some of my favorite hobbies that I enjoy in my free time:</p>
+    
+    <!-- Hobbies Grid -->
+    <div class="hobbies-grid">
+      <div class="hobby">
+        <img src="fashion.jpg" alt="Fashion">
+        <h3>Fashion & Styling</h3>
+        <p>I love styling my clothes and expressing my personality through fashion.</p>
+      </div>  
+      <div class="hobby">
+        <img src="series.jpeg" alt="Series">
+        <h3>Watching Series</h3>
+        <p>I enjoy watching all kinds of series, from dramas to thrillers and everything in between.</p>
+      </div>
+      <div class="hobby">
+        <img src="makeup.jpg" alt="Makeup">
+        <h3>Makeup & Beauty</h3>
+        <p>Listening to music and podcasts while doing makeup is one of my favorite activities.</p>
+      </div>
+      <div class="hobby">
+        <img src="reading.jpg" alt="Reading Books">
+        <h3>Reading Books</h3>
+        <p>I love diving into the worlds created by stories, immersing myself in different adventures and perspectives.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

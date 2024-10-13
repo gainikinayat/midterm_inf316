@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Content goes here -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('active'); // Toggle 'active' class
+    }
+  </script>
+   <section class="family-section">
+    <h1>My Family</h1>
+    <p>Meet my wonderful family of six!</p>
+
+    <!-- Family Grid -->
+    <div class="family-grid">
+      <!-- Family Member 1: Mom -->
+      <div class="family-member">
+        <img src="mom.jpg" alt="Mom">
+        <h3>Mom</h3>
+        <p>My mom is a teacher and psychologist in a local school. She has a beautiful laugh and chameleon eyes. I always dreamt of having eyes like hers.</p>
+      </div>
+
+      <!-- Family Member 2: Dad -->
+      <div class="family-member">
+        <img src="dad.jpg" alt="Dad">
+        <h3>Dad</h3>
+        <p>My dad is a builder, a perfectionist, and a very skilled specialist. He always listens to my rants about my problems.</p>
+      </div>
+
+      <!-- Family Member 3: Me -->
+      <div class="family-member">
+        <img src="me.jpg" alt="Me">
+        <h3>Me</h3>
+        <p>This is me. I am the eldest in the family, sharing moments with my siblings and learning from my parents.</p>
+      </div>
+
+      <!-- Family Member 4: First Sister -->
+      <div class="family-member">
+        <img src="ayhanym.jpg" alt="Ayhanym">
+        <h3>Ayhanym</h3>
+        <p>My first sister is a college student. She always gets things done on time and is very money-driven—a real girlboss!</p>
+      </div>
+
+      <!-- Family Member 5: Inara (Second Sister) -->
+      <div class="family-member">
+        <img src="inara.jpg" alt="Inara">
+        <h3>Inara</h3>
+        <p>Inara is a passionate volleyball player who deeply feels every win and loss.</p>
+      </div>
+
+      <!-- Family Member 6: Kasym (Brother) -->
+      <div class="family-member">
+        <img src="kasym.jpg" alt="Kasym">
+        <h3>Kasym</h3>
+        <p>My little brother Kasym is very kindhearted. He appreciates every gift he's given, even if it's just a bottle of juice. He's my favorite!</p>
+      </div>
+
+      <div class="family-member">
+        <img src="dean.jpg" alt="dean">
+        <h3>Dean</h3>
+        <p>I had to mention our family dog! He is been with us for 12 years and we grew very attached to him.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('active'); // Toggle 'active' class
+    }
+  </script>
+
+  <!-- Education Page Content -->
+  <section class="education-section">
+    <h1>My Education</h1>
+
+    <!-- Timeline of Education -->
+    <h2>Timeline</h2>
+    <ul class="education-timeline">
+      <li><strong>2010 - 2017:</strong> Potanin Secondary School</li> 
+      <li><strong>2017 - 2022:</strong> High School Diploma from PavQyz BIL</li>
+      <li><strong>2022 - Present:</strong> Bachelor’s Degree in Information Systems from SDU</li>
+    </ul>
+
+    <!-- Table for Milestones -->
+    <h2>Key Milestones</h2>
+    <table class="milestones-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Milestone</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2022</td>
+          <td>Graduated Pavlodar BILIM-INNOVATION lyceum</td>
+          <td>Completed high school with "Altyn Belgi"</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Started Bachelor’s Degree</td>
+          <td>Studying in IT field</td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+   <!-- Section for Additional Images -->
+    <section>
+ 
+   <div class="image-gallery">
+     <img src="lyceum.jpg" alt="Description of Image 1">
+     <img src="classmates.jpg" alt="Description of Image 2">
+     
+   </div>
+ </section>
+</body>
+</html>

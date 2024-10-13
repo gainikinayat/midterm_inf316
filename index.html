@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Content goes here -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('active'); // Toggle 'active' class
+    }
+  </script>
+
+  <header class="home-header">
+    <div class="profile-image">
+     <img src="profilepic.jpeg" alt="Your Profile Picture">
+    </div>
+    <div class="home-text">
+      <h1>Welcome to My Personal Portfolio</h1>
+      <p>Hello! My name is Gaini, and I am a 3rd-year student at SDU University, 
+        currently diving deep into the world of cybersecurity. I am passionate about 
+        learning how to protect information and systems from cyber threats and enjoy exploring 
+        the latest trends and techniques in the field.</p>
+      <p>Thank you for visiting my portfolio!</p>
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,504 @@
+/* General Styles */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(247, 224, 195);
+}
+
+nav {
+  font-family: 'Playfair Display', serif;
+  background-color: #c17596f4;
+  padding: 1em;
+  display: flex;  
+  justify-content: space-between; /* Space between hamburger and menu */
+  align-items: center; /* Center items vertically */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensure items stay in a row */
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none; /* Hide by default */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide menu items by default */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width */
+    background-color: #c17596f4; /* Background for dropdown */
+  }
+
+  nav ul.active {
+    display: flex; /* Show menu items when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Space between items */
+    text-align: center; /* Center text */
+  }
+}
+
+
+/* Home Page Styles */
+.home-header {
+  display: flex; /* Enables Flexbox for the header */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Aligns the content vertically */
+  padding: 50px 20px; /* Adjust padding for some space around */
+  background-size: cover; /* Ensures the whole image fits inside the header */
+  background-position: center; /* Centers the image in the header */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.profile-image {
+  margin-right: 50px; /* Space between profile image and text */
+}
+
+.profile-image img {
+  width: 500px; /* Default profile image size */
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #3f3232;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #3f3232;
+}
+
+p {
+  font-size: 1.2em;
+  color: #3f3232;
+}
+
+/* Responsive Behavior */
+@media (max-width: 1024px) {
+  .home-header {
+    padding: 40px 20px;
+  }
+
+  .profile-image img {
+    width: 400px; /* Slightly reduce profile image size on tablets */
+  }
+
+  h1 {
+    font-size: 2.2em; /* Adjust font size for better readability */
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    text-align: center; /* Center text */
+    padding: 30px 20px;
+  }
+
+  .profile-image {
+    margin-right: 0; /* Remove margin when stacked vertically */
+    margin-bottom: 20px; /* Add margin below image */
+  }
+
+  .profile-image img {
+    width: 300px; /* Reduce profile image size for mobile */
+  }
+
+  h1 {
+    font-size: 2em; /* Further reduce font size */
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    padding: 20px 10px;
+  }
+
+  .profile-image img {
+    width: 250px; /* Smaller profile image for very small screens */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Adjust font size for mobile */
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+/* Education Page Styles */
+.education-section {
+  padding: 50px;
+  background-color: beige;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #3f3232;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.education-timeline {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education-timeline li {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #3f3232;
+}
+
+.milestones-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.milestones-table th, .milestones-table td {
+  border: 1px solid #c17596f4;
+  padding: 10px;
+}
+
+.milestones-table th {
+  background-color: #c17596f4;
+  color: white;
+}
+
+.milestones-table td {
+  text-align: center;
+  color: #3f3232;
+}
+
+.image-gallery {
+  display: flex; /* Use flexbox to arrange images in a row */
+  justify-content: center; /* Center the images in the section */
+  flex-wrap: wrap; /* Allow images to wrap to the next line if the screen is too narrow */
+  margin-top: 20px; /* Space above the gallery */
+}
+
+.image-gallery img {
+  width: auto; /* Set a width for the images */
+  height: 400px; /* Maintain aspect ratio */
+  margin: 10px; /* Space around the images */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+}
+
+/* Responsive Behavior */
+@media (max-width: 1024px) {
+  .education-section {
+    padding: 40px 20px;
+  }
+
+  .milestones-table th, .milestones-table td {
+    padding: 8px;
+    font-size: 0.95em;
+  }
+
+  .image-gallery img {
+    height: 300px; /* Adjust image height for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 30px 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.8em;
+  }
+
+  .education-timeline li {
+    font-size: 1.1em;
+  }
+
+  .milestones-table th, .milestones-table td {
+    padding: 6px;
+    font-size: 0.9em;
+  }
+
+  .image-gallery img {
+    height: 250px; /* Reduce image height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .education-section {
+    padding: 20px 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  .education-timeline li {
+    font-size: 1em;
+  }
+
+  .milestones-table th, .milestones-table td {
+    padding: 5px;
+    font-size: 0.85em;
+  }
+
+  .image-gallery img {
+    height: 200px; /* Further reduce image height for mobile screens */
+  }
+}
+
+
+/* Hobbies Page Styles */
+.hobbies-section {
+  padding: 50px;
+  background-color: rgb(247, 224, 195);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hobbies-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hobbies-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.hobby {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hobby img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hobby h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333;
+}
+
+.hobby p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Contact Page Styles */
+.contact-section {
+  padding: 50px;
+  background-color: beige;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h1, .contact-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Flexbox container for form and image */
+.contact-wrapper {
+  display: flex; /* Arrange form and image side by side */
+  align-items: center; /* Align items vertically */
+  gap: 30px; /* Space between form and image */
+}
+
+.contact-image {
+  flex: 1; /* Make image section take up one part of the space */
+}
+
+.contact-image img {
+  max-width: 100%; /* Ensure image scales properly */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.contact-form {
+  flex: 1; /* Make form section take up one part of the space */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left; /* Align text to the left */
+}
+
+.contact-form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form-header {
+  flex-basis: 100%; /* Take up full width */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* Social Media Styles */
+.social-media {
+  margin-top: 30px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.map-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.map-image {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Responsive behavior: Stack the form and image vertically on small screens */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column; /* Stack the form and image */
+  }
+}
+/* Family Page Styles */
+.family-section {
+  padding: 50px;
+  background-color: beige;
+  text-align: center;
+}
+
+.family-section h1 {
+  color: #3f3232;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.family-section p {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-items: center;
+}
+
+.family-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.family-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+.family-member h3 {
+  font-size: 1.5em;
+  color: #3f3232;
+  margin: 15px 0;
+}
+
+.family-member p {
+  color: #666;
+  font-size: 1em;
+}
